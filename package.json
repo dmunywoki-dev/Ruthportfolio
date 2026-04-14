@@ -17,7 +17,7 @@
     "gray-matter": "^4.0.3",
     "lint-staged": "^16.1.5",
     "next": "^16.2.3",
-    "next-mdx-remote": "latest",
+    "next-mdx-remote": "^5.0.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-icons": "^5.5.0",
@@ -36,9 +36,9 @@
     "tzdata": "^1.0.44"
   },
   "overrides": {
-    "next-mdx-remote": "latest"
+    "next-mdx-remote": "^5.0.0"
   },
   "resolutions": {
-    "next-mdx-remote": "latest"
+    "next-mdx-remote": "^5.0.0"
   }
 }
