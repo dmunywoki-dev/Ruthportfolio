@@ -2,34 +2,29 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Dean",
-  lastName: "Munywoki",
-  name: `Dean Munywoki`,
-  role: "Software Developer",
+  firstName: "Ruth",
+  lastName: "Sada Mwatelah",
+  name: `Ruth Sada Mwatelah`,
+  role: "Epidemiologist & Medical Microbiologist",
   avatar: "/images/avatar.jpg",
-  email: "deanmaingi@gmail.com",
-  location: "Africa/Nairobi",
-  languages: ["English", "Swahili"],
+  email: "ruth.sada@hotmail.com",
+  location: "Montreal, QC",
+  languages: ["English", "French", "Swahili"],
 };
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Tech Journal</>,
+  title: <>Subscribe to {person.firstName}'s Research Journal</>,
   description: (
-    <>Weekly reflections on code, data, and innovation — straight from Dean’s development desk.</>
+    <>Weekly reflections on epidemiology, bioinformatics, and infectious disease research.</>
   ),
 };
 
 const social: Social = [
   {
-    name: "GitLab",
-    icon: "gitLab",
-    link: "https://gitlab.com/dmunywoki",
-  },
-  {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/dean-munywoki-50202a200/",
+    link: "https://www.linkedin.com/in/ruth-sada-mwatelah/",
   },
   {
     name: "Email",
@@ -43,26 +38,25 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `The portfolio of ${person.name}, a passionate Software Developer from Nairobi building scalable systems and elegant digital experiences.`,
-  headline: <>Building intelligent, impactful and human-centered software.</>,
+  description: `The portfolio of ${person.name}, an epidemiologist and medical microbiologist based in Montreal, advancing infectious disease research and public health.`,
+  headline: <>Advancing global health through data, epidemiology, and infectious disease research.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">SafeBus</strong>{" "}
+        <strong className="ml-4">Recent Publication</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured Project
+          Featured Work
         </Text>
       </Row>
     ),
-    href: "/work/safebus-school-transport-platform",
+    href: "/work/endocervical-regulatory-t-cells",
   },
   subline: (
     <>
-      Hi, I’m Dean — a software developer @iLabAfrica 
-      , currently advancing Kenya’s innovation ecosystem through robust digital systems.
-      <br />I’m passionate about merging data, design, and development to create tools that make a real difference.
+      Hi, I’m Ruth — a Postdoctoral Researcher @ McGill University, currently investigating microbiome contributions to disease.
+      <br />I’m passionate about merging epidemiological data, bioinformatics, and clinical research to solve complex public health challenges.
     </>
   ),
 };
@@ -71,7 +65,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Learn about ${person.name}, a Nairobi-based software developer shaping Africa’s digital future.`,
+  description: `Learn about ${person.name}, a Montreal-based epidemiologist shaping the future of infectious disease research.`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -83,9 +77,9 @@ const about: About = {
     title: "Who I Am",
     description: (
       <>
-        I’m Dean Munywoki — a developer driven by curiosity, faith, and the belief that technology can transform lives.
-        From backend systems to full-stack platforms, I enjoy the thrill of solving real problems through clean code and creative thinking.
-        My journey has taken me through projects that power national transparency portals, e-learning platforms, and IoT systems — each built with purpose and precision.
+        I’m Ruth Sada Mwatelah — an epidemiologist and medical microbiologist driven by a commitment to public health.
+        With expertise spanning bioinformatics, mathematical modeling, and wet-lab techniques, I uncover hidden patterns in host-pathogen interactions.
+        My journey includes managing complex research projects, conducting advanced statistical analyses, and contributing to high-impact scientific publications.
       </>
     ),
   },
@@ -94,31 +88,48 @@ const about: About = {
     title: "Experience",
     experiences: [
       {
-        company: "@iLabAfrica – Strathmore University",
-        timeframe: "Jan 2022 – Present",
-        role: "Software Developer",
+        company: "McGill University",
+        timeframe: "2024 – Present",
+        role: "Postdoctoral Researcher",
         achievements: [
-          <>
-            Designed, developed, and deployed software solutions for national platforms, including the Public Procurement Information Portal.
-          </>,
-          <>
-            Integrated reporting and analytics tools to enable real-time tracking of service requests and data-driven insights.
-          </>,
-          <>
-            Collaborated across multidisciplinary teams to translate stakeholder needs into robust and scalable software.
-          </>,
-          <>
-            Developed core modules for e-learning, helpdesk, and ticketing systems, enhancing user experience and transparency.
-          </>,
+          <>Conduct data cleaning, statistical modeling, and bioinformatics analysis for infectious disease studies.</>,
+          <>Develop mathematical models to predict microbiome contributions to HPV acquisition and persistence.</>,
+          <>Prepare manuscripts, presentations, and grant submissions while mentoring junior researchers.</>,
         ],
-        images: [
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "PPIP Platform Screenshot",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+      {
+        company: "University of Manitoba",
+        timeframe: "2017 – 2024",
+        role: "Ph.D. Researcher",
+        achievements: [
+          <>Managed large epidemiological datasets using R and SPSS.</>,
+          <>Performed PCR, ELISA, sequencing, and tissue imaging for infectious disease studies.</>,
+          <>Conducted descriptive and inferential statistical analyses; developed bioinformatic workflows.</>,
+          <>Investigated immune correlates and host–pathogen interactions.</>,
         ],
+        images: [],
+      },
+      {
+        company: "Manitoba Centre for Health Policy",
+        timeframe: "2023 – 2024",
+        role: "Data Liaison",
+        achievements: [
+          <>Coordinated research projects focused on older adult care.</>,
+          <>Reviewed SAS code, developed data analysis plans, and supported stakeholders through approvals.</>,
+          <>Produced data presentations, visualizations, and manuscripts.</>,
+        ],
+        images: [],
+      },
+      {
+        company: "Mishra Lab, St. Michael's Hospital",
+        timeframe: "2020 – 2021",
+        role: "Data Analyst Intern",
+        achievements: [
+          <>Cleaned and analyzed HIV self-testing datasets for men who have sex with men in Kenya.</>,
+          <>Conducted clustering, regression modeling, and model validation.</>,
+        ],
+        images: [],
       },
     ],
   },
@@ -127,24 +138,16 @@ const about: About = {
     title: "Education",
     institutions: [
       {
-        name: "Master’s in Data Science and Analytics",
-        description: <>Strathmore University, Nairobi (2025 – Present)</>,
+        name: "Ph.D., Medical Microbiology & Infectious Diseases",
+        description: <>University of Manitoba, Canada (2024)</>,
       },
       {
-        name: "Bachelor of Business Information Technology",
-        description: <>Strathmore University, Nairobi (2019 – 2022)</>,
+        name: "M.Sc., Epidemiology",
+        description: <>Jomo Kenyatta University of Agriculture & Technology, Kenya (2017)</>,
       },
       {
-        name: "Diploma in Business Information Technology",
-        description: <>Strathmore University, Nairobi (2018 – 2019)</>,
-      },
-      {
-        name: "Certificate in Full Stack Software Development",
-        description: <>Strathmore University (2023)</>,
-      },
-      {
-        name: "Certificate in Data Science",
-        description: <>Strathmore University (2020)</>,
+        name: "B.Sc., Medical Microbiology",
+        description: <>Jomo Kenyatta University of Agriculture & Technology, Kenya (2010)</>,
       },
     ],
   },
@@ -153,60 +156,40 @@ const about: About = {
     title: "Technical & Soft Skills",
     skills: [
       {
-        title: "Full Stack Development",
+        title: "Epidemiology & Data Analysis",
         description: (
           <>
-            Experienced in building secure, performant, and responsive applications using
-            Laravel, Django, Flask, Node.js, and React. Skilled at translating business logic
-            into maintainable codebases.
+            Expertise in data management, statistical modeling, regression, clustering, longitudinal analysis, and data visualization using tools like R and SPSS.
           </>
         ),
         tags: [
-          { name: "Laravel", icon: "laravel" },
-          { name: "Django", icon: "python" },
-          { name: "React", icon: "react" },
-          { name: "Node.js", icon: "nodejs" },
+          { name: "R", icon: "code" },
+          { name: "SPSS", icon: "database" },
+          { name: "Modeling", icon: "python" },
         ],
       },
       {
-        title: "Data Science & Machine Learning",
+        title: "Bioinformatics & Wet Lab",
         description: (
           <>
-            Passionate about turning data into actionable insights using Python, Pandas, and ML frameworks.
-            My MSc research explores intelligent systems that enhance national digital infrastructure.
+            Proficient in PCR, ELISA, sequencing, tissue imaging, and comprehensive genomic data analysis to understand host-pathogen interactions.
           </>
         ),
         tags: [
-          { name: "Python", icon: "python" },
-          { name: "Pandas", icon: "database" },
-          { name: "TensorFlow", icon: "ai" },
+          { name: "Bioinformatics", icon: "code" },
+          { name: "Genomics", icon: "database" },
         ],
       },
       {
-        title: "Cloud & DevOps",
+        title: "Research & Project Management",
         description: (
           <>
-            Skilled in CI/CD, Docker, and Cloud Computing. Experienced in deploying applications securely using
-            modern pipelines and containerized environments.
+            Experienced in multidisciplinary coordination, grant writing, protocol development, and mentoring emerging researchers in the field.
           </>
         ),
         tags: [
-          { name: "Docker", icon: "docker" },
-          { name: "CI/CD", icon: "code" },
-          { name: "Cloud", icon: "cloud" },
-        ],
-      },
-      {
-        title: "Soft Skills",
-        description: (
-          <>
-            Creative thinker, problem solver, and communicator.
-            Known for adaptability, leadership, and fostering collaborative innovation.
-          </>
-        ),
-        tags: [
-          { name: "Leadership", icon: "team" },
-          { name: "Creativity", icon: "lightbulb" },
+          { name: "Management", icon: "team" },
+          { name: "Mentorship", icon: "lightbulb" },
         ],
       },
     ],
@@ -215,23 +198,23 @@ const about: About = {
 
 const work: Work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `A collection of impactful software projects by ${person.name}.`,
+  label: "Research",
+  title: `Publications & Research – ${person.name}`,
+  description: `A collection of impactful epidemiological research and publications by ${person.name}.`,
 };
 
 const blog: Blog = {
   path: "/blog",
-  label: "Blog",
+  label: "Journal",
   title: "Notes, Lessons & Reflections",
-  description: `Insights, projects, and thoughts from ${person.name} on technology and growth.`,
+  description: `Insights, research updates, and thoughts from ${person.name} on infectious diseases and epidemiology.`,
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
   title: `Photo Gallery – ${person.name}`,
-  description: `Snapshots of creativity, code, and community moments from ${person.name}'s journey.`,
+  description: `Snapshots of laboratory work, conferences, and community moments from ${person.name}'s journey.`,
   images: [
     { src: "/images/gallery/vertical-1.jpeg", alt: "work environment", orientation: "vertical" },
     { src: "/images/gallery/horizontal-2.jpeg", alt: "project demo", orientation: "horizontal" },
