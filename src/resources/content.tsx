@@ -27,9 +27,14 @@ const social: Social = [
     link: "https://www.linkedin.com/in/ruth-sada-mwatelah/",
   },
   {
-    name: "Email",
+    name: "Personal Email",
     icon: "email",
     link: `mailto:${person.email}`,
+  },
+  {
+    name: "Academic Email",
+    icon: "email",
+    link: "mailto:ruth.mwatelah@mcgill.ca",
   },
 ];
 
@@ -131,6 +136,18 @@ const about: About = {
         ],
         images: [],
       },
+      {
+        company: "Various Organizations",
+        timeframe: "2022 – Present",
+        role: "Volunteer & Committee Member",
+        achievements: [
+          <>Volunteer, Career Working Development Group, Canadian Black Scientist Network (2024 – Present).</>,
+          <>Abstract Reviewer, Canadian Cancer Research Conference (2025).</>,
+          <>Manuscript Reviewer, Pan African Medical Journal (2025 – Present) & Scientific Reports (2024 – Present).</>,
+          <>Internship/Lab Exchange Committee Member, Visual and Automated Disease Analytics (2022 – 2023).</>,
+        ],
+        images: [],
+      },
     ],
   },
   studies: {
@@ -190,6 +207,18 @@ const about: About = {
         tags: [
           { name: "Management", icon: "team" },
           { name: "Mentorship", icon: "lightbulb" },
+        ],
+      },
+      {
+        title: "Communication",
+        description: (
+          <>
+            Strong background in scientific writing, peer-reviewed publications, and conference presentations.
+          </>
+        ),
+        tags: [
+          { name: "Writing", icon: "edit" },
+          { name: "Presenting", icon: "mic" },
         ],
       },
     ],

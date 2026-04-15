@@ -47,15 +47,15 @@ Your personal details are used across the whole app to render personalized headi
   {
     code:
 `const person = {
-    firstName: "Dean",
-    lastName: "Yu",
+    firstName: "Ruth",
+    lastName: "Sada Mwatelah",
     get name() {
       return "...";
     },
-    role: "Design Engineer",
+    role: "Epidemiologist & Medical Microbiologist",
     avatar: "/images/avatar.jpg",
-    location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+    location: "America/Toronto", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ["English", "French", "Swahili"], // optional: Leave the array empty if you don't want to display languages
 };`,
     language: "tsx",
     label: "src/app/resources/content.js"
@@ -99,13 +99,13 @@ Each page have it's own object that manages the personalized content, such as he
     code:
 `const home = {
     label: "Home",
-    title: "Dean Munywoki Portfolio",
-    description: "Portfolio website showcasing my work as a Design Engineer",
-    headline: <>Design engineer and builder</>,
+    title: "Ruth Sada Mwatelah Portfolio",
+    description: "Portfolio website showcasing my research as an Epidemiologist",
+    headline: <>Advancing global health through data</>,
     subline: (
       <>
-        I'm Dean, a Software Developer @iLabAfrica where I craft intuitive
-        <br /> user experiences. After hours, I build my own projects.
+        I'm Ruth, a Postdoctoral Researcher @ McGill University investigating
+        <br /> microbiome contributions to disease.
       </>
     ),
 };`,
