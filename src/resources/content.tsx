@@ -10,7 +10,6 @@ const person: Person = {
   email: "ruth.sada@hotmail.com",
   location: "America/Toronto", // Changed to a valid IANA Time Zone
   languages: ["English", "French", "Swahili"],
-,
 };
 
 const newsletter: Newsletter = {
