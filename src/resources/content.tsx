@@ -8,8 +8,9 @@ const person: Person = {
   role: "Epidemiologist & Medical Microbiologist",
   avatar: "/images/avatar.jpg",
   email: "ruth.sada@hotmail.com",
-  location: "Montreal, QC",
+  location: "America/Toronto", // Changed to a valid IANA Time Zone
   languages: ["English", "French", "Swahili"],
+,
 };
 
 const newsletter: Newsletter = {
