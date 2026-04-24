@@ -24,17 +24,15 @@ import { notFound } from "next/navigation";
 
 function getMDXFiles(dir: string) {
   if (!fs.existsSync(dir)) {
-    notFound();
+    return [];
   }
 
-  return fs.readdirSync(dir).filter((file) => path.extname(file) === ".mdx");
+  return fs.readdirSync(dir, { withFileTypes: true })
+    .filter((dirent) => dirent.isFile() && path.extname(dirent.name) === ".mdx")
+    .map((dirent) => dirent.name);
 }
 
 function readMDXFile(filePath: string) {
-  if (!fs.existsSync(filePath)) {
-    notFound();
-  }
-
   const rawContent = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(rawContent);
 
@@ -66,7 +64,7 @@ function getMDXData(dir: string) {
   });
 }
 
-export function getPosts(customPath = ["", "", "", ""]) {
+export function getPosts(customPath = ["src", "app", "blog", "posts"]) {
   const postsDir = path.join(process.cwd(), ...customPath);
   return getMDXData(postsDir);
 }
