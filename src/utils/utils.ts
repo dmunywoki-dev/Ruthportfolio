@@ -21,6 +21,7 @@ type Metadata = {
 };
 
 import { notFound } from "next/navigation";
+import { unstable_noStore as noStore } from "next/cache";
 
 function getMDXFiles(dir: string) {
   if (!fs.existsSync(dir)) {
@@ -65,6 +66,7 @@ function getMDXData(dir: string) {
 }
 
 export function getPosts(customPath = ["src", "app", "blog", "posts"]) {
+  noStore();
   const postsDir = path.join(process.cwd(), ...customPath);
   return getMDXData(postsDir);
 }
