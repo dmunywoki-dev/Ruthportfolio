@@ -21,7 +21,6 @@ type Metadata = {
 };
 
 import { notFound } from "next/navigation";
-import { unstable_noStore as noStore } from "next/cache";
 
 function getMDXFiles(dir: string) {
   if (!fs.existsSync(dir)) {
@@ -43,7 +42,7 @@ function readMDXFile(filePath: string) {
     summary: data.summary || "",
     image: data.image || "",
     images: data.images || [],
-    tag: data.tag || [],
+    tag: data.tag || "",
     team: data.team || [],
     link: data.link || "",
   };
@@ -66,7 +65,11 @@ function getMDXData(dir: string) {
 }
 
 export function getPosts(customPath = ["src", "app", "blog", "posts"]) {
-  noStore();
-  const postsDir = path.join(process.cwd(), ...customPath);
+  // Use explicit string literals so Vercel's bundler (NFT) includes the folders
+  const isWork = customPath.includes("work");
+  const postsDir = isWork
+    ? path.join(process.cwd(), "src/app/work/projects")
+    : path.join(process.cwd(), "src/app/blog/posts");
+
   return getMDXData(postsDir);
 }
