@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Sada Mwatelah",
   name: `Ruth Sada Mwatelah`,
   role: "Epidemiologist & Medical Microbiologist",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/graduation.png",
   email: "ruth.sada@hotmail.com",
   location: "America/Toronto", // Changed to a valid IANA Time Zone
   languages: ["English", "French", "Swahili"],
@@ -49,7 +49,16 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `The portfolio of ${person.name}, an epidemiologist and medical microbiologist based in Montreal, advancing infectious disease research and public health.`,
-  headline: <>Advancing global health through data, epidemiology, and infectious disease research.</>,
+  headline: (
+    <>
+      <img 
+        src="/images/graduation.png" 
+        alt="Ruth Sada Mwatelah - Public Health & Epidemiology" 
+        style={{ width: '100%', height: '280px', objectFit: 'cover', borderRadius: '16px', marginBottom: '24px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }} 
+      />
+      Advancing global health through data, epidemiology, and infectious disease research.
+    </>
+  ),
   featured: {
     display: true,
     title: (
