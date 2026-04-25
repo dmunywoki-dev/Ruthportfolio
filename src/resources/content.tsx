@@ -52,7 +52,7 @@ const home: Home = {
   headline: (
     <>
       <img 
-        src="/images/graduation.png" 
+        src="/images/avatar.jpeg" 
         alt="Ruth Sada Mwatelah - Public Health & Epidemiology" 
         style={{ width: '100%', height: '280px', objectFit: 'cover', borderRadius: '16px', marginBottom: '24px', boxShadow: '0 4px 20px rgba(0,0,0,0.1)' }} 
       />
