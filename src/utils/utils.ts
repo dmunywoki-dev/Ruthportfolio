@@ -38,7 +38,7 @@ function readMDXFile(filePath: string) {
 
   const metadata: Metadata = {
     title: data.title || "",
-    publishedAt: data.publishedAt,
+    publishedAt: data.publishedAt || "",
     summary: data.summary || "",
     image: data.image || "",
     images: data.images || [],
@@ -66,7 +66,8 @@ function getMDXData(dir: string) {
 
 export function getPosts(customPath = ["src", "app", "blog", "posts"]) {
   // Use explicit string literals so Vercel's bundler (NFT) includes the folders
-  const isWork = customPath.includes("work");
+  const pathStr = Array.isArray(customPath) ? customPath.join("/") : String(customPath);
+  const isWork = pathStr.includes("work");
   const postsDir = isWork
     ? path.join(process.cwd(), "src/app/work/projects")
     : path.join(process.cwd(), "src/app/blog/posts");

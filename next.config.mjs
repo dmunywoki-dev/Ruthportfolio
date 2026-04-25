@@ -25,6 +25,12 @@ const nextConfig = {
     compiler: "modern",
     silenceDeprecations: ["legacy-js-api"],
   },
+  experimental: {
+    outputFileTracingIncludes: {
+      "/*": ["src/app/work/projects/**/*", "src/app/blog/posts/**/*"],
+      "/**/*": ["src/app/work/projects/**/*", "src/app/blog/posts/**/*"]
+    }
+  }
 };
 
 export default withMDX(nextConfig);
