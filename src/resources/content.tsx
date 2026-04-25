@@ -36,6 +36,11 @@ const social: Social = [
     icon: "email",
     link: "mailto:ruth.mwatelah@mcgill.ca",
   },
+  {
+    name: "Phone",
+    icon: "phone",
+    link: "tel:+12042965432",
+  },
 ];
 
 const home: Home = {
@@ -82,9 +87,14 @@ const about: About = {
     title: "Who I Am",
     description: (
       <>
-        I’m Ruth Sada Mwatelah — an epidemiologist and medical microbiologist driven by a commitment to public health.
-        With expertise spanning bioinformatics, mathematical modeling, and wet-lab techniques, I uncover hidden patterns in host-pathogen interactions.
-        My journey includes managing complex research projects, conducting advanced statistical analyses, and contributing to high-impact scientific publications.
+        Dynamic epidemiologist and medical microbiologist with extensive experience in infectious disease research, epidemiological data analysis, and bioinformatics. Proven expertise in managing complex research projects, conducting advanced statistical analyses, and contributing to high-impact scientific publications. Adept at interdisciplinary collaboration, grant writing, and mentoring emerging researchers.
+        <br /><br />
+        <strong>Selected Publications:</strong>
+        <ul style={{ marginTop: '0.5rem', listStyleType: 'disc', paddingLeft: '1.25rem' }}>
+          <li>Mwatelah R., Knight J., Ma H., et al. <em>Developing a screening tool for undiagnosed HIV in MSM in Kenya.</em> (In preparation)</li>
+          <li>Mwatelah R., Mutua F., et al. <em>Non-Lactobacillus dominance is associated with decreased cervicovaginal cytokine receptor expression.</em> (Under review)</li>
+          <li>Ssemaganda A., Cholette F., Mwatelah R. <em>Endocervical regulatory T cells and genital inflammation.</em> Frontiers in Immunology, 2021.</li>
+        </ul>
       </>
     ),
   },
